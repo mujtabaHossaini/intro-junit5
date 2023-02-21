@@ -12,9 +12,10 @@ class GreetingTest {
     }
 
     @BeforeEach
-    void setUp() {
+     void setUp() {
         System.out.println("In Before Each....");
         greeting = new Greeting();
+        System.out.println(greeting);
     }
 
     @Test
@@ -36,6 +37,7 @@ class GreetingTest {
     @AfterEach
     void tearDown() {
         System.out.println("In After Each........");
+        System.out.println(greeting);
     }
 
     @AfterAll
